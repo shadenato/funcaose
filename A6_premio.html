@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prêmio de vendas</title>
+</head>
+
+<body>
+    <!-- 6. Uma empresa dá um prêmio aos funcionários que cumprem ou ultra-
+        passam determinado valor de vendas de produtos. Para cada funcionário,
+        foi estabelecido um valor a ser alcançado. Faça um algoritmo para ler o
+        valor fixado e o valor de vendas de um funcionário. Depois, imprima
+        a mensagem "Ganhou!" (caso o funcionário tenha conseguido o prêmio)
+        e "Não ganhou!" (caso ele não tenha conquistado).  -->
+    
+    <h1>Prêmio de vendas</h1>
+    <div id="resultado"></div>
+
+    <script>
+
+        let valor_fix = prompt("Digite o valor da meta de vendas: (em R$) ");
+        let valor_func = prompt("Digite o valor das vendas realizadas pelo funcionário (em R$) ");
+        
+        if (valor_fix < valor_func){
+
+            document.getElementById("resultado").innerHTML = "GANHOU!"
+
+        } else {
+
+            document.getElementById("resultado").innerHTML = "NÃO GANHOU!"    
+
+        }
+
+    </script>
+
+</body>
+</html>

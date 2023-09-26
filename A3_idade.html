@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 3. Leia os anos de nascimento de duas pessoas e depois
+         calcule suas idades. Em seguida, imprima o nome e a idade
+          de cada uma delas e indique qual delas é a mais nova.   -->
+    
+    <h1>COMPARAÇÃO IDADE</h1>
+    <div id="resultado"></div>
+
+    <script>
+        let nome1 = prompt("Digite o nome da primeira pessoa: ");
+        let idade1 = prompt("Digite o ano de nascimento da primeira pessoa: ")
+        let nome2 = prompt("Digite o nome da segunda pessoa: ");
+        let idade2 = prompt("Digite a ano de nascimento da segunda pessoa: ")
+        
+        idade1 = 2023 - idade1;
+        idade2 = 2023 - idade2;
+
+        if(idade1 < idade2){
+
+            document.getElementById("resultado").innerHTML = "Até o final do ano de 2023, a idade de " + nome1 + " será igual a: " + idade1 + " anos. E a idade de " + nome2 + " será igual a: " + idade2 + " anos. Portanto, " + nome1 + " é mais novo(a) do que " + nome2 + ".";
+
+        } else {
+
+            document.getElementById("resultado").innerHTML = "Até o final do ano de 2023, a idade de " + nome1 + " será igual a: " + idade1 + " anos. E a idade de " + nome2 + " será igual a: " + idade2 + " anos. Portanto, " + nome2 + " é mais novo(a) do que " + nome1 + ".";
+
+        }
+
+    </script>
+
+    
+
+
+</body>
+</html>

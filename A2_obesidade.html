@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem é a pessoa mais obesa?</title>
+</head>
+<body>
+    <h1>Quem é a pessoa mais obesa?</h1>
+    <div id="resultado"></div>
+
+    <!-- 2. Leia os nomes e os pesos de duas pessoas e, em seguida,
+         imprima os dados da pessoa mais obesa.   -->
+
+
+    <script>
+        let nome1 = prompt("Digite o nome da primeira pessoa: ");
+        let peso1 = prompt("Digite o peso da primera pessoa: ");
+        let nome2 = prompt("Digite o nome da segunda pessoa: ");
+        let peso2 = prompt("Digite o peso da segunda pessoa: ");
+
+        if(peso1 > peso2){
+
+            document.getElementById("resultado").innerHTML = "A pessoa chamada " + nome1 + " tem o peso de " + peso1 + "kg, e é mais obesa do que a pessoa chamada " + nome2 + " que pesa " + peso2 + "kg."
+
+        } else {
+
+            document.getElementById("resultado").innerHTML = "A pessoa chamada " + nome2 + " tem o peso de " + peso2 + "kg, e é mais obesa do que a pessoa chamada " + nome1 + " que pesa " + peso1 + "kg."
+
+        }
+
+    </script>
+
+</body>
+</html>

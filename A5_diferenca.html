@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferença</title>
+</head>
+<body>
+    
+    <!-- 5. Leia dois valores e depois mostre a diferença entre eles.  -->
+    
+    <h1>Diferença</h1>
+    <div id="resultado"></div>
+    
+    <script>
+
+        let n1 = Number (prompt("Escreva o primeiro número: "));
+        let n2 = Number (prompt("Escreva o segundo número: "));
+        let dif = ""
+
+        dif = n1 - n2;
+
+        document.getElementById("resultado").innerHTML = "A diferença entre a subtração do número " + n1 + " e o " + n2 + " é igual a: " + dif + "."
+
+    </script>
+   
+</body>
+</html>

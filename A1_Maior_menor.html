@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior ou menor</title>
+</head>
+<body>
+    <h1>Maior ou menor</h1>
+    <div id="resultado"></div>
+
+    <!-- 1. Leia dois números e verifique: qual é o menor e qual é o maior.  -->
+
+
+    <script>
+        let n1 = Number(prompt("Digite o primeiro número: "));
+        let n2 = Number(prompt("Digite o segundo número: "));
+
+        if(n1 > n2){
+
+            document.getElementById("resultado").innerHTML = "O número " + n1 + " é maior do que o número " + n2 + "."
+
+        } else {
+
+            document.getElementById("resultado").innerHTML = "O número " + n1 + " é menor do que o número " + n2 + "."
+
+        }
+
+    </script>
+
+</body>
+</html>
